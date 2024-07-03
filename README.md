@@ -1,4 +1,4 @@
-#SkyCast
+# SkyCast
 
 A React application built with TypeScript that allows users to select countries from an autocomplete dropdown. This project demonstrates:
 
