@@ -44,7 +44,7 @@ export default function Autocompleted() {
                 renderInput={(params) => (
                     <TextField {...params} label='Select A Country' />
                 )}
-                onChange={(event, value) => {
+                onChange={(_event, value) => {
                     if (value) {
                         setCountry(value.commonName);
                     } else {
