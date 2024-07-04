@@ -42,7 +42,7 @@ export default function ContactUs() {
         e.preventDefault();
         setIsSubmitting(true);
         try {
-            const response = await axios.post('http://localhost:3000/contact', formData);
+            const response = await axios.post('https://sky-casts-backend.vercel.app/contacts', formData);
             setResponseMessage(response.data.message);
             setIsError(false);
             setFormData({ name: '', phoneNumber: '', email: '', message: '' });
