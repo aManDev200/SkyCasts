@@ -73,7 +73,7 @@ interface ForecastData {
     };
 }
 
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+const API_KEY = "0e11fa9fa4b849079a383957240207";
 
 export default function Home() {
     const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
