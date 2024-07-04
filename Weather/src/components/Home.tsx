@@ -85,8 +85,8 @@ export default function Home() {
     useEffect(() => {
         async function fetchData() {
             const location = country || 'India';
-            const weatherUrl = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=yes`;
-            const forecastUrl = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=1&aqi=yes`;
+            const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=yes`;
+            const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=1&aqi=yes`;
 
             const [weatherResponse, forecastResponse] = await Promise.all([
                 fetch(weatherUrl),
